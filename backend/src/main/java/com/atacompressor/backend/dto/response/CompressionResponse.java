@@ -17,6 +17,18 @@ public class CompressionResponse {
     public CompressionResponse() {
     }
 
+    public CompressionResponse(Long id, String originalText, String compressedText, String taskType, Integer originalLength, Integer compressedLength, Double compressionRatio, String status, LocalDateTime createdAt) {
+        this.id = id;
+        this.originalText = originalText;
+        this.compressedText = compressedText;
+        this.taskType = taskType;
+        this.originalLength = originalLength;
+        this.compressedLength = compressedLength;
+        this.compressionRatio = compressionRatio;
+        this.status = status;
+        this.createdAt = createdAt;
+    }
+
     public Long getId() {
         return id;
     }
